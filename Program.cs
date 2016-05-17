@@ -11,7 +11,6 @@ namespace SampleRC2WebApp
             var host = new WebHostBuilder()
                 .UseKestrel()
                 .UseStartup<Startup>()
-                .UseContentRoot(Directory.GetCurrentDirectory())
                 .Build();
                 
             host.Run();
